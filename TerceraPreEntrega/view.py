@@ -4,7 +4,7 @@ from django.template import loader
 import datetime
 
 def saludo(request):
-    return HttpResponse("Bienvenidos")
+    return HttpResponse("Bienvenidos a mi primera pagina WEB")
 
 def ProbandoTemplate(self):
     nom = "Antonella"

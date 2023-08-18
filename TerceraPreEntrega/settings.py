@@ -55,7 +55,7 @@ ROOT_URLCONF = 'TerceraPreEntrega.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/antonella.loza/Documents/Training/Curso_Coder_Python/Tercera_pre-entrega+Loza/tercera_pre-entrega/TerceraPreEntrega/TerceraPreEntrega/plantillas'],
+        'DIRS': ['C:/Users/antonella.loza/Documents/Training/Curso_Coder_Python/Tercera_pre-entrega+Loza/tercera_pre-entrega/TerceraPreEntrega/AppGym/template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

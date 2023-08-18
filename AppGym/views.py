@@ -1,12 +1,20 @@
 from django.shortcuts import render
-from AppGym.models import Rutina
+from AppGym import models
 from django.http import HttpResponse
 
 # Create your views here.
-def rutina(self):
+def inicio(request):
+   return HttpResponse('Vista de Inicio')
 
-    rutina = Rutina(nombre = "Piernas", duracion = "40")
-    rutina.save()
-    documentoDeTexto = f"---> Rutina: {rutina.nombre}, Duracion: {rutina.duracion}."
+def inicio(request):
+   return render(request, "AppGym/Inicio.html")
 
-    return HttpResponse (documentoDeTexto)
+def rutinas(request):
+   return render(request, "AppGym/Rutina.html")
+
+def clientas(request):
+   return render(request, "AppGym/Clientas.html")
+
+def profesoras(request):
+   return render(request, "AppGym/Profesoras.html")
+

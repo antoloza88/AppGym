@@ -35,19 +35,20 @@
         <header class="masthead bg-secondary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="card-img-top" src="{% static 'app_gym/assets/img/good-vibes.jpeg' %}" alt="" />
+                <img class="card-img-top mb-4" src="{% static 'app_gym/assets/img/good-vibes.jpeg' %}" alt="" width="200" height="500" />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">GOOD VIBES GYM</h1>
+                <h1 class="masthead-heading text-uppercase mb-2">GOOD VIBES GYM</h1>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom divider-light mb-2">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Gimnasio exclusivo para mujeres</p>
+                <p class="masthead-subheading font-weight-light">Gimnasio exclusivo para mujeres</p>
             </div>
         </header>
+        
 
         {% block contenidoQueCambia %}
 
@@ -84,7 +85,7 @@
                 </div>
                 <!-- Rutina Section Content-->
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="card" style="width: 23rem; color: goldenrod;">
                             <img src="{% static 'app_gym/assets/img/piernas.jpg' %}" class="card-img-top" alt="Piernas">
                             <div class="card-body">
@@ -94,12 +95,22 @@
                         </div>
                     </div>
                 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="card" style="width: 23rem; color: goldenrod;">
                             <img src="{% static 'app_gym/assets/img/abdominales.jpg' %}" class="card-img-top" alt="Abdominales">
                             <div class="card-body">
                                 <h5 class="card-title">Abdominales</h5>
-                                <p class="card-text">Además de nuestras nueve máquinas vamos a realizar ejercicios para tonificar las piernas durante 40 min.</p>
+                                <p class="card-text">Además de nuestras nueve máquinas vamos a realizar ejercicios para tonificar los abdominales durante 40 min.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card" style="width: 23rem; color: goldenrod;">
+                            <img src="{% static 'app_gym/assets/img/box.jpg' %}" class="card-img-top" alt="Abdominales">
+                            <div class="card-body">
+                                <h5 class="card-title">Box</h5>
+                                <p class="card-text">Además de nuestras nueve máquinas vamos a realizar ejercicios para tonificar todo el cuerpo durante 40 min.</p>
                             </div>
                         </div>
                     </div>

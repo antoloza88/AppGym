@@ -7,3 +7,4 @@ admin.site.register(Rutina)
 admin.site.register(Clientes)
 
 admin.site.register(Profesora)
+

@@ -1,0 +1,29 @@
+{% extends "AppGym/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+   
+   <h1>Crear nueva usuaria</h1>
+
+   {% if miFormulario.errors %}
+
+   <p style="color: red;"> La usuaria ya existe</p>
+
+   {% endif %}
+
+   <form action="" method="POST">{% csrf_token %}
+
+    <table>
+
+        {{miFormulario.as_table}}
+
+
+    </table>
+
+    <input type="submit", value="Enviar">
+
+
+   </form>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    {% for p in Clientas %}
+
+         <li> {{p}} </li>
+         <button>
+            <a href="{% url 'EliminarClienta' p.usuario %}"> Eliminar </a>
+            <a href="{% url 'EditarClienta' p.usuario %}"> Editar </a>
+         </button>
+
+    {% endfor %}
+
+    <a href="NuevaClientaFormulario"><button>Agregar nueva clienta</button></a>
+
+</body>
+</html>

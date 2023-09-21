@@ -18,6 +18,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'app_gym/css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'app_gym/css/tempStyles.css' %}" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -36,6 +37,10 @@
                 <a class="btn btn-primary" href="{% url 'Login' %}">LOGIN</a>
                 {% else %}
                 <a class="btn btn-primary" href="{% url 'Logout' %}">LOGOUT</a>
+                <div>
+                    <img src="{{ url }}" alt="" class="userPicture">
+                    <h6>{{ user.username }}</h6>
+                </div>
                 {% endif %}
             </div>
         </nav>

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from AppGym.models import Clientes, Rutina, Profesora
+from AppGym.models import Clientes, Rutina, Profesora, Avatar
 from django.http import HttpResponse
 from AppGym.forms import NuevaClientaFormulario, EditarUsuarioFormulario
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
@@ -12,16 +12,21 @@ from django.contrib.auth.decorators import login_required
 #    return HttpResponse('Vista de Inicio')
 
 def inicio(request):
-   return render(request, "AppGym/padre.html")
+   avatares = Avatar.objects.filter(user=request.user.id)
+   return render(request, "AppGym/padre.html" , {"url":avatares[0].imagen.url})
 
 def rutinas(request):
-   return render(request, "AppGym/Rutina.html")
+   avatares = Avatar.objects.filter(user=request.user.id)
+   return render(request, "AppGym/Rutina.html" , {"url":avatares[0].imagen.url})
 
+@login_required
 def clientas(request):
-   return render(request, "AppGym/Clientas.html")
+   avatares = Avatar.objects.filter(user=request.user.id)
+   return render(request, "AppGym/Clientas.html", {"url": avatares[0].imagen.url})
 
 def profesoras(request):
-   return render(request, "AppGym/Profesoras.html")
+   avatares = Avatar.objects.filter(user=request.user.id)
+   return render(request, "AppGym/Profesoras.html" , {"url":avatares[0].imagen.url})
 
 def nuevaclientaformulario(request):
  
@@ -115,8 +120,9 @@ def login_request(request):
          
          if user is not None:
             login(request, user)
+            avatares = Avatar.objects.filter(user=request.user.id)
 
-            return render(request, "AppGym/Inicio.html", {"mensaje": f"Bienvenida {usuario}"})
+            return render(request, "AppGym/Inicio.html", {"mensaje": f"Bienvenida {usuario}" , "url":avatares[0].imagen.url})
 
          else:
             
@@ -142,7 +148,7 @@ def register(request):
         form = UserCreationForm()
     return render(request, "AppGym/registro.html", {"form":form})
 
-
+@login_required
 def editarPerfil(request):
     
    usuario = request.user

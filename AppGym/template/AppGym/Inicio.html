@@ -4,7 +4,8 @@
 
 {% block contenidoQueCambia %}
    <div class="text-center mx-auto">
-       <h1>Bienvenidos</h1>
+        <img src="{{ url }}" alt="">
+       <h1>{{mensaje}}</h1>
        <h2 style="color:green;">Somos un gimnasio exclusivo para mujeres, con innovadoras máquinas y rutinas</h2>
        <a href="{% url 'EditarPerfil' %}" class="btn btn-primary">Editar User</a>
    </div>

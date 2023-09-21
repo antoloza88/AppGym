@@ -8,3 +8,5 @@ admin.site.register(Clientes)
 
 admin.site.register(Profesora)
 
+admin.site.register(Avatar)
+

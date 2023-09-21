@@ -1,4 +1,4 @@
-body {
+.blackBg {
     background-color: #2d2d2d;
 }
 
@@ -38,5 +38,9 @@ body {
 
 li::marker {
     color: #ffffff00; 
+}
+
+.userPicture {
+    width: 50px;
 }
 

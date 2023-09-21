@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{% static 'app_gym/css/styles.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'app_gym/css/tempStyles.css' %}">
 </head>
 <body>
     {% block contenido %}
@@ -27,8 +28,8 @@
             {% csrf_token %}
     
             {{form.as_p}}
-            <button class="btn btn-primary">Registrar</button>
-    
+            <button class="btn btn-primary">Registrar</button> 
+            <a href="{% url 'Login' %}" class="btn btn-primary">Volver</a>
         </form>
     </div>
    

@@ -1,0 +1,42 @@
+body {
+    background-color: #2d2d2d;
+}
+
+.login {
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 350px;
+    padding: 60px 10px;
+    background-color: white;
+}
+
+.login h2 {
+    padding: 0px 10px 40px 10px;
+}
+
+#loginBtns {
+    margin-top: 30px;
+}
+
+.registro {
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 600px;
+    padding: 60px 10px;
+    background-color: white;
+}
+
+.registro .errorlist {
+    color: red
+}
+
+.registro input {
+    width: 80%;
+}
+
+li::marker {
+    color: #ffffff00; 
+}
+

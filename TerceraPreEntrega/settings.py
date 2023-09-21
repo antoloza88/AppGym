@@ -55,7 +55,7 @@ ROOT_URLCONF = 'TerceraPreEntrega.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/antonella.loza/Documents/Anto/Programacion/GithubAnto/GithubAnto/AppGym/template'],
+        'DIRS': ['C:/Users/ernesto.castro.godoy/OneDrive - Accenture/Documents2/Cursos/Python/GithubAnto/AppGym/template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

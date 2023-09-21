@@ -7,7 +7,7 @@ Laura Contreras:
 Antonella Loza:
     -Desarrolló modelos y vistas de Rutina, Clientes y Profesoras
 Ernesto Castro
-    -Desarrolló modelo y vistas de Login, Registro y Avatares.
+    -Desarrolló modelo y vistas de Login, Registro, Edición de Users y Avatares.
 
 
 USUARIO DE PRUEBA CON AVATAR:
